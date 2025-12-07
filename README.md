@@ -1,4 +1,4 @@
-# Kyber (Flattened) — Arduino-friendly Port
+# Kyber (Flattened) — Arduino-friendly 
 
 This is a flattened copy of the Kyber public-key / KEM reference implementation adapted for use with the Arduino IDE (and other environments that require all source files to live in a single directory). The original Kyber project was written in multiple subfolders; this distribution places all `.c`, `.h`, and helper files together so the Arduino IDE can compile them inside a sketch folder.
 
@@ -11,7 +11,7 @@ Important: this repo is a literal flattened source set — it preserves the orig
 
 **Included files**
 
-The `kyber-flat/` folder contains these source and header files:
+The folder contains these source and header files:
 
 - `cbd.c`, `cbd.h`
 - `cpapke.c`, `cpapke.h`
@@ -34,7 +34,7 @@ Note: Files with `esp32` in the name are specific to ESP32 platforms (hardware P
 **Quick Usage (Arduino IDE)**
 
 1. Create a new sketch folder (Arduino IDE creates a folder named after the sketch).
-2. Copy all files from the `kyber-flat/` directory into that sketch folder.
+2. Copy all files from this directory into that sketch folder.
 3. Create your sketch `.ino` file next to these files.
 4. In the `.ino` file include the library headers inside an `extern "C"` block to prevent C++ name mangling, for example:
 
@@ -78,3 +78,4 @@ void loop() {
 **License & Credits**
 
 This folder is a flattened redistribution of the Kyber reference implementation. Credit and license belong to the original Kyber project authors. Refer to the upstream repository for the authoritative license text and authorship details.
+
